@@ -1,3 +1,4 @@
+
 /* =========================
    LARGE SCREENS
 ========================= */
@@ -38,7 +39,7 @@
   section {
     height: auto;
     margin: 0 3rem;
-    padding-top: 3rem;
+    padding-top: 2rem;
   }
 
   #profile,
@@ -63,10 +64,6 @@
     object-fit: cover;
   }
 
-  .about-containers {
-    flex-wrap: wrap;
-  }
-
   .arrow {
     display: none;
   }
@@ -86,19 +83,19 @@
 
 @media screen and (max-width: 768px) {
 
-  nav {
-    height: auto;
-    padding: 1rem 0;
+  html, body {
+    overflow-x: hidden;
   }
 
   section {
     margin: 0 1.2rem;
-    padding-top: 2rem;
+    padding-top: 1.2rem;
     height: auto;
   }
 
-  html, body {
-    overflow-x: hidden;
+  nav {
+    height: auto;
+    padding: 1rem 0;
   }
 
   /* PROFILE */
@@ -107,29 +104,44 @@
     text-align: center;
     gap: 1rem;
     height: auto;
-    padding-bottom: 1rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 0;
+    min-height: auto;
   }
 
   .section__pic-container {
-    width: 260px;
-    height: 260px;
+    width: 240px;
+    height: 240px;
   }
 
   /* ABOUT */
- #about .about-containers {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 0.8rem;
-}
+  #about {
+    margin-top: 0;
+    padding-top: 0.5rem;
+  }
 
-/* THIS is the real fix */
-#about .details-container {
-  display: inline-block;
-  width: auto;
-  max-width: 260px;
-  padding: 0.7rem 0.8rem;
-}
+  #about .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 0.8rem;
+  }
+
+  #about .details-container {
+    width: 100%;
+    max-width: 280px;
+    padding: 0.9rem;
+  }
+
+  #about .details-container h3 {
+    font-size: 1.1rem;
+    margin: 0.3rem 0;
+  }
+
+  #about .details-container p {
+    font-size: 0.9rem;
+    line-height: 1.4;
+    margin: 0;
+  }
 
   /* SKILLS */
   .article-container {
@@ -142,6 +154,18 @@
     justify-content: flex-start;
   }
 
+  /* PROJECTS */
+  #projects .about-containers {
+    flex-direction: column;
+    align-items: center;
+    gap: 1.5rem;
+  }
+
+  #projects .details-container {
+    width: 100%;
+    max-width: 100%;
+  }
+
   /* CONTACT */
   .contact-info-upper-container {
     flex-wrap: wrap;
@@ -152,57 +176,10 @@
   footer .nav-links {
     display: flex;
     flex-direction: row;
-    flex-wrap: wrap;
     justify-content: center;
+    flex-wrap: wrap;
     gap: 1rem;
   }
-
-  /* =========================
-     🔥 FIX PROJECTS (MAIN FIX)
-  ========================= */
-
-  #projects .about-containers {
-    display: flex;
-    flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
-    width: 100%;
-  }
-
-  #projects .details-container {
-    width: 100%;
-    max-width: 100%;
-    flex: none;
-  }
-
-  #projects {
-    height: auto;
-  }
-
-  img {
-    max-width: 100%;
-  }
-
-  #about .about-containers {
-  flex-direction: column;
-  align-items: center;
-}
-
-#about .details-container {
-  width: 100%;
-  max-width: 420px;
-  padding: 2.2rem;
-  margin-bottom: 1rem;
-}
-#about .details-container h3 {
-  font-size: 1.3rem;
-  margin-bottom: 0.5rem;
-}
-
-#about .details-container p {
-  font-size: 1rem;
-  line-height: 1.6;
-}
 }
 
 /* =========================
@@ -210,6 +187,7 @@
 ========================= */
 
 @media screen and (max-width: 480px) {
+
   section {
     margin: 0 1rem;
   }
@@ -231,10 +209,6 @@
   .section__pic-container {
     width: 180px;
     height: 180px;
-  }
-
-  .details-container {
-    padding: 1rem;
   }
 
   .btn {

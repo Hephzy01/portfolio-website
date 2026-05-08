@@ -155,9 +155,8 @@ a:hover {
 /* SECTIONS */
 
 section {
-  padding-top: 4rem;
+  padding-top: 2rem;
   margin: 0 2rem;
-  box-sizing: border-box;
 }
 
 .section-container {
