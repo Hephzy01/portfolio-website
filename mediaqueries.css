@@ -137,10 +137,15 @@
     margin: 0.3rem 0;
   }
 
+<<<<<<< HEAD
   #about .details-container p {
     font-size: 0.9rem;
     line-height: 1.4;
     margin: 0;
+=======
+  .details-container {
+    padding: 1.5rem;
+>>>>>>> parent of 958857a (Add github action deployment)
   }
 
   /* SKILLS */
