@@ -116,17 +116,20 @@
   }
 
   /* ABOUT */
-  #about {
-    padding-top: 1rem;
-  }
+ #about .about-containers {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.8rem;
+}
 
-  .section-container {
-    gap: 1rem;
-  }
-
-  .about-containers {
-    flex-direction: column;
-  }
+/* THIS is the real fix */
+#about .details-container {
+  display: inline-block;
+  width: auto;
+  max-width: 260px;
+  padding: 0.7rem 0.8rem;
+}
 
   /* SKILLS */
   .article-container {
@@ -179,6 +182,27 @@
   img {
     max-width: 100%;
   }
+
+  #about .about-containers {
+  flex-direction: column;
+  align-items: center;
+}
+
+#about .details-container {
+  width: 100%;
+  max-width: 420px;
+  padding: 2.2rem;
+  margin-bottom: 1rem;
+}
+#about .details-container h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0.5rem;
+}
+
+#about .details-container p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
 }
 
 /* =========================

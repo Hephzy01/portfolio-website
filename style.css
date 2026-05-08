@@ -156,7 +156,7 @@ a:hover {
 
 section {
   padding-top: 4rem;
-  margin: 0 10rem;
+  margin: 0 2rem;
   box-sizing: border-box;
 }
 
@@ -285,9 +285,13 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
+.about-containers {
+  display: flex;
+}
+
 .about-details-container {
   display: flex;
+  flex-direction: column;
 }
 
 .about-pic {
@@ -417,8 +421,7 @@ article .icon {
   max-width: 1100px;
   margin: 0 auto;
   justify-content: center;
-  gap: 2rem;
-  align-items: stretch;
+  
 }
 
 /* CONTACT */
