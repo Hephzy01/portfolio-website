@@ -1,0 +1,304 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="mediaqueries.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo">Zibah</div>
+      <div>
+        <ul class="nav-links"> 
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+     
+    <nav id="hamburger-nav">
+     <div class="logo">Zibah</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#skills" onclick="toggleMenu()">Skills</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+      <img src="./assets/adex.png" alt="Adeola Akinlade profile picture" />
+      </div>
+      <div class="section__text">
+        <p class="section__text__p1">Hello, I'm</p>
+        <h1 class="title">Adeola Akinlade</h1>
+        <p class="section__text__p2">Cloud Practitioner</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/Ajokeade-cv.pdf')"
+          >
+            Download CV
+          </button>
+          <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button>
+        </div>
+        <div id="socials-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https://www.linkedin.com/in/hephzy/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Beb6uAJk5QlSJoItHsqiOSQ%3D%3D'"
+          />
+          <img
+            src="./assets/github.png"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/Hephzy01'"
+          />
+        </div>
+      </div>
+      </section>
+
+<!-- About Section -->
+    <section id="about">
+      <p class="section__text__p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./assets/about-pic2.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="./assets/experience.png"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Cloud and Web Projects</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="./assets/education.png"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>B.Sc. Bachelors Degree<br /></p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+            I’m a Cloud Practitioner focused on building secure, scalable, and production ready systems. I have a solid foundation in Linux, AWS,
+             and web infrastructure, with a strong interest in how real world systems are designed and deployed. </p>
+         <p>
+           I work on hands on projects from configuring Linux servers to deploying cloud based applications and document each step to reflect real engineering practices. </p>
+
+        <p>My goal is to design reliable infrastructure, automate workflows, and support high availability systems that meet modern business needs.
+            </p>
+          </div>
+          </div>
+           </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#skills'"
+      />
+    </section>
+    <section id="skills">
+      <p class="section__text__p1">Explore My</p> 
+      <h1 class="title">Technical Skills</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            
+            <div class="article-container">
+              <article>
+                <img
+                  src="./assets/aws2.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <div class="sub-skills">
+                  <h3>Cloud Platform</h3>
+                  </div>
+                  <p>AWS-EC2, S3, IAM, VPC Route 53, CLoudWatch</p>
+                </div>
+              </article>
+              <article>
+                <img
+                  src="./assets/administrative.png"
+                  alt="Skils icon"
+                  class="icon"
+                />
+                <div>
+                  <div class="sub-skills"><h3>Server Administration</h3></div>
+                  <p>Linux, SSH & key authentication, Web server deployment</p>
+                </div>
+              </article>
+              <article>
+                 <img
+                  src="./assets/network.png"
+                  alt="Skills icon"
+                  class="icon"
+                />
+                <div>
+                  <div class="sub-skills"><h3>Network Configuration</h3></div>
+                  <p> VPC configuration, subnetting & routing, DNS & Domain setup </p>
+                </div>
+              </article>
+              <article>
+                 <img
+                  src="./assets/security.png"
+                  alt="Skil icon"
+                  class="icon"
+                />
+                <div>
+                  <div class="sub-skills"><h3>Monitoring & Security</h3></div>
+                  <p>CloudWatch, IAM roles, Back up & access control</p>
+                </div>
+              </article>
+            </div>
+          </div>
+          </div>
+
+
+      <!-- Project section -->
+    <section id="projects">
+      <p class="section__text__p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title"> Portfolio Deployment with CI/CD
+
+            </h2>
+              <p>Built and hosted my portfolio website on AWS using S3 and CloudFront, 
+                configured a custom domain with Route 53, secured with SSL via Certificate Manager, 
+                and automated deployments using GitHub Actions.<br/></p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+          
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">AWS 3-Tier WordPress Deployment</h2>
+            <p>Built a secure and scalable 3-tier AWS architecture separating web.
+               Implemented separate web, app, and database layers for scalability and security.
+              Ensured high availability and fault tolerance across the architecture.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Hephzy01/wordpress-3tier-architecture?tab=readme-ov-file'">
+                View Project
+              </button>
+
+            </div>
+          </div>
+
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Serverless Contact Form </h2>
+            <p>Built and deployed a fully serverless contact form on AWS using S3, CloudFront, API Gateway, Lambda, 
+              and DynamoDB. Added real-time notifications with SNS and monitoring with CloudWatch while implementing secure IAM roles and permissions.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Hephzy01/serverless-contact-form-aws'"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+            </div>
+            <h2 class="experience-sub-title project-title">Cloud Cost Dashboard </h2>
+            <p>A cloud cost dashboard that tracks AWS spending, budget usage, and service level costs.
+
+                Built with React and deployed using AWS S3, API Gateway, and Lambda. The app fetches cost data from a REST API and visualizes it using charts.</p>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/Hephzy01/cloud-cost-dashboard'"
+              >
+                View Project
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    
+          <section id="contact">
+      <p class="section__text__p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="./assets/email.png"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:hephzyloveth@gmail.com">Email Me </a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="./assets/linkedin.png"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/hephzy/?lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base_contact_details%3Beb6uAJk5QlSJoItHsqiOSQ%3D%3D">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <nav>
+        <div class="nav-links-container">
+          <ul class="nav-links">
+            <li><a href="#about">About</a></li>
+              <li><a href="#skills">Skills</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+     <p>Copyright &#169; 2024 Adeola Akinlade. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
+
+          
