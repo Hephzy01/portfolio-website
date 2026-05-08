@@ -65,7 +65,6 @@
 
   .about-containers {
     flex-wrap: wrap;
-    margin-top: 1rem;
   }
 
   .arrow {
@@ -86,6 +85,7 @@
 ========================= */
 
 @media screen and (max-width: 768px) {
+
   nav {
     height: auto;
     padding: 1rem 0;
@@ -96,90 +96,42 @@
     padding-top: 2rem;
     height: auto;
   }
-#about {
-  padding-top: 1rem;
-  margin-top: 0;
-}
 
-.section-container {
-  gap: 1rem;
-}
+  html, body {
+    overflow-x: hidden;
+  }
 
-.about-containers {
-  margin-top: 1rem;
-  margin-bottom: 1rem;
-}
-
-.section__pic-container {
-  margin-bottom: 1rem;
-}
-
-.text-container {
-  margin-bottom: 0;
-}
-
+  /* PROFILE */
   #profile {
-  flex-direction: column;
-  text-align: center;
-  gap: 1rem;
-  height: auto;
-  min-height: auto;
-  padding-bottom: 1rem;
-  margin-bottom: 0;
-}
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
+    height: auto;
+    padding-bottom: 1rem;
+  }
 
   .section__pic-container {
-    width: 350px;
-    height: 350px;
+    width: 260px;
+    height: 260px;
   }
 
-  .section__pic-container img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+  /* ABOUT */
+  #about {
+    padding-top: 1rem;
   }
 
-  .title {
-    font-size: 2.2rem;
-  }
-
-  .section__text__p2 {
-    font-size: 1.2rem;
-  }
-
-  .btn-container {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .btn {
-    width: 100%;
-    max-width: 250px;
+  .section-container {
+    gap: 1rem;
   }
 
   .about-containers {
     flex-direction: column;
   }
 
-  #about .section__pic-container {
-  width: 280px;
-  height: 280px;
-  margin: 0 auto 1rem;
-}
-
-#about .about-pic {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-  .details-container {
-    padding: 1.5rem;
-  }
-
+  /* SKILLS */
   .article-container {
     flex-direction: column;
-    gap: 1.5rem;
+    gap: 1rem;
   }
 
   article {
@@ -187,64 +139,46 @@
     justify-content: flex-start;
   }
 
-  .experience-sub-title {
-    font-size: 1.3rem;
+  /* CONTACT */
+  .contact-info-upper-container {
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
- .contact-info-upper-container {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-  width: 100%;
-  padding: 1rem;
-}
+  /* FOOTER */
+  footer .nav-links {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+  }
 
-.contact-info-container {
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-  margin: 0;
-}
+  /* =========================
+     🔥 FIX PROJECTS (MAIN FIX)
+  ========================= */
 
-footer .nav-links {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-wrap: wrap;
-  gap: 1rem;
-}
+  #projects .about-containers {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: center;
+    width: 100%;
+  }
 
-  footer {
+  #projects .details-container {
+    width: 100%;
+    max-width: 100%;
+    flex: none;
+  }
+
+  #projects {
     height: auto;
-    padding: 2rem 0;
-  }
-
-  footer nav {
-    height: auto;
-    margin-bottom: 1rem;
-  }
-
-  .text-container {
-    text-align: left;
-    line-height: 1.7;
   }
 
   img {
-  max-width: 100%;
-}
-
-#projects .about-containers {
-  flex-direction: column;
-  align-items: center;
-}
-
-#projects .details-container {
-  flex: 1 1 100%;
-  width: 100%;
-  max-width: 100%;
-}
+    max-width: 100%;
+  }
 }
 
 /* =========================
@@ -264,7 +198,6 @@ footer .nav-links {
     font-size: 1.4rem;
   }
 
-  .section__text__p1,
   .section__text__p2,
   p,
   a {
