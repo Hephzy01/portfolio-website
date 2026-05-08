@@ -230,6 +230,10 @@ footer .nav-links {
     text-align: left;
     line-height: 1.7;
   }
+
+  img {
+  max-width: 100%;
+}
 }
 
 /* =========================
