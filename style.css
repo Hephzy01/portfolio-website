@@ -295,7 +295,7 @@ section {
 }
 
 .details-container {
-  padding: 1.5rem;
+  padding: 2rem;
   flex: 1;
   background: white;
   text-align: center;
@@ -320,7 +320,7 @@ section {
 
 /* EXPERIENCE SECTION */
 
-#experience {
+#skills {
   position: relative;
 }
 
@@ -333,7 +333,7 @@ section {
   gap: 1.5rem;
 }
 
-.experience-details-container {
+.skill-details-container {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -345,8 +345,9 @@ section {
   text-align:initial;
   flex-wrap: wrap;
   flex-direction:row;
-  gap: 1.5rem;
+  gap: 2rem;
   justify-content: space-around;
+  margin-right: 1rem;
   
 }
 

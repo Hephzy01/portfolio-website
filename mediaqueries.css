@@ -1,7 +1,7 @@
 @media screen and (max-width: 1400px) {
   #profile {
     height: 83vh;
-    margin-bottom: 6rem;
+    margin-bottom: 4rem;
   }
   .about-containers {
     flex-wrap: wrap;
@@ -20,7 +20,7 @@
     display: flex;
   }
   
-  #experience,
+  #skills,
   .experience-details-container {
     margin-top: 2rem;
   }
@@ -75,6 +75,7 @@
   .contact-info-container p,
   .nav-links li a {
     font-size: 1rem;
+    padding: 0.2rem
   }
   .experience-sub-title {
     font-size: 1.25rem;
