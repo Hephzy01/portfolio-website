@@ -346,6 +346,10 @@ section {
   
 }
 
+#skills .details-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
 .article-container {
   display:flex;
   text-align:initial;
@@ -401,6 +405,20 @@ article .icon {
 #projects .details-container {
   flex: 0 1 45%;
   max-width: 500px;
+}
+
+#projects .experience-details-container {
+  display: flex;
+  justify-content: center;
+}
+
+#projects .about-containers {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: center;
+  gap: 2rem;
+  align-items: stretch;
 }
 
 /* CONTACT */
