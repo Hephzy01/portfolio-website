@@ -347,9 +347,8 @@ section {
   flex-direction:row;
   gap: 2rem;
   justify-content: space-around;
-  margin-right: 1rem;
+  margin-right: 0.2rem;
   
-}
 
 article {
   display: flex;
