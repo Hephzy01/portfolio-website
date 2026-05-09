@@ -113,8 +113,9 @@
   
 
   .section__pic-container {
-    width: 320px;
-    height: 320px;
+    width: 350px;
+    height: 350px;
+    margin: 0 auto 2rem;
   }
 
   /* ABOUT */
@@ -233,8 +234,8 @@
   }
 
   .section__pic-container {
-    width: 180px;
-    height: 180px;
+    width: 20px;
+    height: 200px;
   }
 
   .details-container {
