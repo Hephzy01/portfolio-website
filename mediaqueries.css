@@ -140,10 +140,13 @@
   }
 
   /* CONTACT */
-  .contact-info-upper-container {
-    flex-wrap: wrap;
-    gap: 1rem;
+  @media screen and (max-width: 768px) {
+
+  .article-container {
+    grid-template-columns: 1fr;
+    gap: 2rem;
   }
+}
 
   /* FOOTER */
   footer .nav-links {
@@ -179,7 +182,7 @@
   img {
     max-width: 100%;
   }
-  
+
 }
 
 /* =========================
