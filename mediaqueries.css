@@ -132,9 +132,20 @@
     gap: 1rem;
   }
 
+  @media screen and (max-width: 768px) {
+
   .about-containers {
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
   }
+
+  .details-container {
+    width: 50%;
+    padding: 1rem;
+  }
+
+}
 
 
   @media screen and (max-width: 768px) {
